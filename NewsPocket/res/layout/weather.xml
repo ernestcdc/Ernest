@@ -1,0 +1,241 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<ScrollView 
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:shrinkColumns="0"
+ 		android:stretchColumns="0">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+		        android:id="@+id/textView1"
+		        android:text="WEATHER"
+		        android:layout_width="match_parent"
+		        android:layout_span="3"
+		        android:textStyle="bold"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginLeft="10dp"
+		        android:textColor="#a09f9f"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/textView2"             
+                android:text="20th of February"
+                android:layout_width="match_parent"
+                android:layout_span="3"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#b0b0b0" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:text="Cebu, Phl"
+                android:textColor="#b0b0b0"
+                android:textSize="17sp"
+                android:layout_marginRight="12dp" />
+
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content" 
+            android:background="#f2f2f2">
+            
+            <TextView
+                android:id="@+id/textView2"  
+                android:lines="3"           
+                android:text="Now\n          32° Celsius\n          Sunny Skies"
+                android:layout_weight="2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="17dp"
+                android:layout_width="match_parent"
+                android:textSize="17sp"
+                android:textColor="#a09f9f"/>
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/sunny" />
+            
+        </TableRow>
+        
+      <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="fill_parent"
+            android:background="#f2f2f2"
+            android:layout_marginTop="3dp"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+                android:id="@+id/textView2"  
+                android:lines="3"           
+                android:text="At 8:45 PM\n          24° Celsius\n          Cloudy Skies"
+                android:layout_weight="2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="17dp"
+                android:layout_width="match_parent"
+                android:textSize="17sp"
+                android:textColor="#a09f9f"/>
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/rainy" />
+            
+        </TableRow>
+        
+      <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="fill_parent"
+            android:background="#f2f2f2"
+            android:layout_marginTop="3dp"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+                android:id="@+id/textView2"  
+                android:lines="3"           
+                android:text="At Midnight\n          24° Celsius\n          Heavy Rainfall"
+                android:layout_weight="2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="17dp"
+                android:layout_width="match_parent"
+                android:textSize="17sp"
+                android:textColor="#a09f9f"/>
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/yolanda" />
+            
+        </TableRow>
+        
+      <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/textView2"             
+                android:text="Forecast for Tomorrow"
+                android:layout_width="match_parent"
+                android:layout_span="3"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:textColor="#a09f9f" />
+            <TextView
+                android:id="@+id/textView2"             
+                android:text="Cebu, Phl"
+                android:layout_width="match_parent"
+                android:textSize="17sp"
+                android:textColor="#a09f9f"
+                android:layout_marginRight="12dp" />
+        </TableRow>
+        
+      <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="fill_parent"
+            android:background="#f2f2f2"
+            android:layout_marginTop="3dp"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+                android:id="@+id/textView2"  
+                android:lines="3"           
+                android:text="At Morning\n          27° Celsius\n          Cloudy Skies"
+                android:layout_weight="2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="17dp"
+                android:layout_width="match_parent"
+                android:textSize="17sp"
+                android:textColor="#a09f9f"/>
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/sunny2" />
+            
+        </TableRow>
+        
+      <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="fill_parent"
+            android:background="#f2f2f2"
+            android:layout_marginTop="3dp"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+                android:id="@+id/textView2"  
+                android:lines="3"           
+                android:text="At Midday\n          25° Celsius\n          Cloudy Skies"
+                android:layout_weight="2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="17dp"
+                android:layout_width="match_parent"
+                android:textSize="17sp"
+                android:textColor="#a09f9f"/>
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/sunny" />
+            
+        </TableRow>
+        
+      <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="fill_parent"
+            android:background="#f2f2f2"
+            android:layout_marginTop="3dp"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+                android:id="@+id/textView2"  
+                android:lines="3"           
+                android:text="At Midnight\n          22° Celsius\n          Heavy Rainfall"
+                android:layout_weight="2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="17dp"
+                android:layout_width="match_parent"
+                android:textSize="17sp"
+                android:textColor="#a09f9f"/>
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/rainy" />
+            
+        </TableRow>
+        
+        
+    </TableLayout>
+   
+</ScrollView>
+</RelativeLayout>

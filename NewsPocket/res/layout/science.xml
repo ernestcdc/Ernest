@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_latestOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:text="SCIENCE"
+            android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_newsOne"
+            android:layout_below="@id/textView_latestOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+			android:text="Superfast laser pulses could pave way for beam weapons"
+			android:textColor="@color/grey"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView_newsOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_newsOne"
+            android:layout_alignRight="@+id/textView_summaryOne"
+            android:layout_below="@id/textView_newsOne"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/science_1" />
+        
+        <TextView
+            android:id="@+id/textView_summaryOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="Laser pulses lasting tiny fractions of a second have created superhighways in the air that are potentially capable of transporting megawatts of laser power. The advance should help scientists detect pollution."
+			android:layout_below="@id/imageView_newsOne"
+			android:textColor="@color/summaryColor"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textView_readMoreOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView_summaryOne"
+            android:layout_alignRight="@+id/textView_summaryOne"
+            android:text="Read More"
+            android:textColor="@color/red"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="onScienceClickOne" />
+        
+        <!-- SECOND NEWS: START -->
+        
+        <TextView
+            android:id="@+id/textView_newsTwo"
+            android:layout_below="@id/textView_readMoreOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="7dp"
+			android:text="Boeing to sell phone that can self-destruct"
+			android:textColor="@color/grey"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView_newsTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_newsTwo"
+            android:layout_alignRight="@+id/textView_summaryTwo"
+            android:layout_below="@id/textView_newsTwo"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/science_2" />
+        
+        <TextView
+            android:id="@+id/textView_summaryTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="Exposure to passive smoking in childhood causes irreversible damage to the structure of children’s arteries, according to a study. The study is the first to follow children through to adulthood."
+			android:layout_below="@id/imageView_newsTwo"
+			android:textColor="@color/summaryColor"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textView_readMoreTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView_summaryTwo"
+            android:layout_alignRight="@+id/textView_summaryTwo"
+            android:text="Read More"
+            android:textColor="@color/red"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="onScienceClickOne" />
+        
+        <!-- SECOND NEWS: END -->
+        
+    </RelativeLayout>
+    
+
+</ScrollView>

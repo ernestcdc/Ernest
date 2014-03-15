@@ -1,0 +1,942 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:shrinkColumns="0"
+ 		android:stretchColumns="0">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+		        android:id="@+id/textView1"
+		        android:text="CURRENCY RATES"
+		        android:layout_width="match_parent"
+		        android:layout_span="3"
+		        android:textStyle="bold"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginLeft="10dp"
+		        android:textColor="#a09f9f"
+		        android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/textView2"             
+                android:text="As of February 20"
+                android:layout_width="match_parent"
+                android:layout_span="3"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textColor="#b0b0b0" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="10dp">
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="Currency Unit"
+	            android:layout_marginLeft="10dp"
+	            android:layout_weight="1" 
+	            android:background="#000000"
+	            android:textColor="#ffffff"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="Symbol"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#000000"
+	            android:textColor="#ffffff"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="Phil.Peso"
+	            android:layout_marginRight="10dp"
+	            android:layout_weight="1" 
+	            android:background="#000000"
+	            android:textColor="#ffffff"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="US Dollar"
+	            android:layout_weight="1" 
+	            android:layout_marginLeft="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="USD"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="43.367"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="Japanese Yen"
+	            android:layout_marginLeft="10dp"
+	            android:layout_weight="1" 
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="JPY"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="0.437"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="UK Pound"
+	            android:layout_weight="1" 
+	            android:layout_marginLeft="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="GBP"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="65.52"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="HK Dollar"
+	            android:layout_weight="1"
+	            android:layout_marginLeft="10dp" 
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="HKD"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="5.58"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="Swiss Franc"
+	            android:layout_weight="1" 
+	            android:layout_marginLeft="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="CHF"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="45.83"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="Canadian Dollar"
+	            android:layout_weight="1" 
+	            android:layout_marginLeft="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="CAD"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="41.72"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="Singaporean Dollar"
+	            android:layout_weight="1" 
+	            android:layout_marginLeft="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="SGD"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="34.38"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="Australian Dollar"
+	            android:layout_weight="1" 
+	            android:layout_marginLeft="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="AUD"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="39.23"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="Bahrain Dinar"
+	            android:layout_weight="1" 
+	            android:layout_marginLeft="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="BHD"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="115.029"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="Saudi Arabian"
+	            android:layout_weight="1" 
+	            android:layout_marginLeft="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="SAR"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="11.564"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="Rial Brunei Dollar"
+	            android:layout_weight="1" 
+	            android:layout_marginLeft="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="BHD"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="32.247"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="Indonesian Rupiah"
+	            android:layout_weight="1" 
+	            android:layout_marginLeft="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="IDR"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="0.0043"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="Thai Baht"
+	            android:layout_weight="1" 
+	            android:layout_marginLeft="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="THB"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="1.39"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="UAE Dirham"
+	            android:layout_weight="1" 
+	            android:layout_marginLeft="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="AED"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="25.25"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="Chinese Yuan"
+	            android:layout_weight="1" 
+	            android:layout_marginLeft="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="CHY"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="7.06"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="Korean Won"
+	            android:layout_weight="1" 
+	            android:layout_marginLeft="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="KRW"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="0.03"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="EU Monetary Euro"
+	            android:layout_weight="1" 
+	            android:layout_marginLeft="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="EUR"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="56.672"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="Argentinian Peso"
+	            android:layout_weight="1" 
+	            android:layout_marginLeft="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="ARS"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="34.247"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="Danish Kroner"
+	            android:layout_weight="1" 
+	            android:layout_marginLeft="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="DKK"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="7.5977"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="Mexican New Peso"
+	            android:layout_weight="1" 
+	            android:layout_marginLeft="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="MXN"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="3.3853"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="New Zealand Dollar"
+	            android:layout_weight="1" 
+	            android:layout_marginLeft="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="NZD"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="33.7093"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="Norweigan Kroner"
+	            android:layout_weight="1" 
+	            android:layout_marginLeft="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="NOK"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="7.15"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="Pakistani Rupee"
+	            android:layout_weight="1"
+	            android:layout_marginLeft="10dp" 
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="PKR"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="0.4337"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="South African Rand"
+	            android:layout_weight="1"
+	            android:layout_marginLeft="10dp" 
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="ZAR"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="4.34"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="Swedish Kroner"
+	            android:layout_weight="1" 
+	            android:layout_marginLeft="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="SEK"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="6.51"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="Syrian Pound"
+	            android:layout_weight="1" 
+	            android:layout_marginLeft="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="SYP"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="0.41"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="Taiwnese NT Dollar"
+	            android:layout_weight="1" 
+	            android:layout_marginLeft="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="TWD"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="1.4518"
+	            android:layout_weight="1" 
+	            android:layout_marginRight="10dp"
+	            android:background="#dcdcdc"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/textView3a" 
+	            android:text="Venezuelan Bolivar"
+	            android:layout_weight="1" 
+	            android:layout_marginLeft="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>  
+	        <TextView 
+	            android:id="@+id/textView3b" 
+	            android:text="VEB"
+	            android:layout_weight="1" 
+	            android:paddingLeft="25dip"
+	            android:paddingRight="25dip"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+	        <TextView 
+	            android:id="@+id/textView3c" 
+	            android:text="6.900"
+	            android:layout_weight="1"
+	            android:layout_marginRight="10dp"
+	            android:background="#cac9c9"
+	            android:textColor="#000000"
+	            android:gravity="center"/>
+        </TableRow>
+        
+    </TableLayout>
+</ScrollView>

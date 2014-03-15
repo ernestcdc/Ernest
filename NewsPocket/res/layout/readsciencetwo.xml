@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/textView_latest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:text="SCIENCE"
+            android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/textView_news"
+            android:layout_below="@id/textView_latest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+			android:text="Passive smoking causes irreversible damage to children's arteries"
+			android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/textView_updated"
+            android:layout_below="@id/textView_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+			android:text="Updated 21 minutes ago"
+			android:textColor="@color/updated"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+        
+        <ImageView
+            android:id="@+id/imageView_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_updated"
+            android:layout_alignRight="@+id/textView_imageDescription"
+            android:layout_below="@id/textView_updated"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/science_2" />
+        
+        <TextView
+            android:id="@+id/textView_imageDescription"
+            android:layout_below="@id/imageView_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="The thickening of the arteries' walls associated with being exposed to parents' smoke, means that these children will be at greater risk of heart attacks and strokes in later life."
+			android:textColor="@color/updated"
+            android:textSize="12sp" />
+        
+        <View
+	        android:id="@+id/view_line1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="1dp"
+	        android:layout_below="@id/textView_imageDescription"
+	        android:layout_marginTop="2dp"
+	        android:layout_marginLeft="3dp"
+	        android:layout_marginRight="3dp"
+	        android:background="@color/updated"
+	        android:paddingTop="20dp" />
+        
+        <TextView
+            android:id="@+id/textView_newsContentOne"
+            android:layout_below="@id/view_line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="The thickening of the arteries' walls associated with being exposed to parents' smoke, means that these children will be at greater risk of heart attacks and strokes in later life. The researchers from Tasmania, Australia and Finland say that exposure to both parents smoking in childhood adds an extra 3.3 years to the age of blood vessels when the children reach adulthood."
+			android:textColor="@color/summaryColor"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/textView_newsContentTwo"
+            android:layout_below="@id/textView_newsContentOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="The study is the first to follow children through to adulthood in order to examine the association between exposure to parental smoking and increased carotid intima-media thickness (IMT) -- a measurement of the thickness of the innermost two layers of the arterial wall -- in adulthood. It adds further strength to the arguments for banning smoking in areas where children may be present, such as cars."
+			android:textColor="@color/summaryColor"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/textView_newsContentThree"
+            android:layout_below="@id/textView_newsContentTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="The study was made up of 2401 participants in the Cardiovascular Risk in Young Finns Study, which started in 1980, and 1375 participants in the Childhood Determinants of Adult Health study, which started in 1985 in Australia. The children were aged between three and 18 at the start of the studies. The researchers asked questions about parents smoking habits and they used ultrasound to measure the thickness of the children's artery walls once they had reached adulthood."
+			android:textColor="@color/summaryColor"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/textView_newsContentFour"
+            android:layout_below="@id/textView_newsContentThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="The results took account of other factors that could explain the association such as education, the children's smoking habits, physical activity, body mass index, alcohol consumption and biological cardiovascular risk factors such as blood pressure and cholesterol levels in adulthood."
+			android:textColor="@color/summaryColor"
+            android:textSize="14sp" />
+        
+    </RelativeLayout>
+    
+
+</ScrollView>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_latestOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:text="LATEST"
+            android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_newsOne"
+            android:layout_below="@id/textView_latestOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+			android:text="South Sudan clashes 'kill 400-500'"
+			android:textColor="@color/grey"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView_newsOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/south_sudan"
+            android:layout_below="@id/textView_newsOne" />
+        
+        <TextView
+            android:id="@+id/textView_summaryOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="Juba — A UN official said Tuesday between 400-500 people are believed to have been killed in South Sudan, where two days of fighting between rival troops has sent thousands of terrified civilians fleeing an alleged coup bid."
+			android:layout_below="@id/imageView_newsOne"
+			android:textColor="@color/summaryColor"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textView_readMoreOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView_summaryOne"
+            android:layout_alignRight="@+id/textView_summaryOne"
+            android:text="Read More"
+            android:textColor="@color/red"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="readLatestOne" />
+        
+        <!-- SECOND NEWS: START -->
+        
+        <TextView
+            android:id="@+id/textView_newsTwo"
+            android:layout_below="@id/textView_readMoreOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="7dp"
+			android:text="Gaia space telescope's billion pixel camera to map Milky Way"
+			android:textColor="@color/grey"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView_newsTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/milky_way"
+            android:layout_below="@id/textView_newsTwo" />
+        
+        <TextView
+            android:id="@+id/textView_summaryTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="What do you need to map a billion stars? A billion-pixel camera certainly helps. Scientists hope to glean more clues about the origin and evolution of the universe, and in particular our own galaxy, when a camera of this incredible scale -- is launched Thursday."
+			android:layout_below="@id/imageView_newsTwo"
+			android:textColor="@color/summaryColor"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textView_readMoreTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView_summaryTwo"
+            android:layout_alignRight="@+id/textView_summaryTwo"
+            android:text="Read More"
+            android:textColor="@color/red"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="readLatestTwo" />
+        
+        <!-- SECOND NEWS: END -->
+        
+    </RelativeLayout>
+    
+
+</ScrollView>

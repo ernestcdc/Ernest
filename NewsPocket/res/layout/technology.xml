@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_latestOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:text="TECHNOLOGY"
+            android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_newsOne"
+            android:layout_below="@id/textView_latestOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+			android:text="Rise of the human exoskeletons"
+			android:textColor="@color/grey"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView_newsOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/technology_1"
+            android:layout_below="@id/textView_newsOne" />
+        
+        <TextView
+            android:id="@+id/textView_summaryOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="On the outskirts of Pisa in a back room of a modern block, a machine is waiting for its operator. The device has arms and legs and is suspended by ropes from a metal frame. Its only other tether is a thick umbilical cable."
+			android:layout_below="@id/imageView_newsOne"
+			android:textColor="@color/summaryColor"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/textView_readMoreOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView_summaryOne"
+            android:layout_alignRight="@+id/textView_summaryOne"
+            android:text="Read More"
+            android:textColor="@color/red"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="onTechnologyClickOne" />
+        
+        <!-- SECOND NEWS: START -->
+        
+        <TextView
+            android:id="@+id/textView_newsTwo"
+            android:layout_below="@id/textView_readMoreOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="7dp"
+			android:text="Boeing to sell phone that can self-destruct"
+			android:textColor="@color/grey"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView_newsTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_newsTwo"
+            android:layout_alignRight="@+id/textView_summaryTwo"
+            android:layout_below="@id/textView_newsTwo"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/technology_2" />
+        
+        <TextView
+            android:id="@+id/textView_summaryTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="Boeing is set to debut a new secure phone for government agencies and defense contractors that will self-destruct if it's tampered with. It just won't be quite as dramatic as the old television show. There won't be any smoke or explosions, but the contents of the device will be completely erased."
+			android:layout_below="@id/imageView_newsTwo"
+			android:textColor="@color/summaryColor"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/textView_readMoreTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView_summaryTwo"
+            android:layout_alignRight="@+id/textView_summaryTwo"
+            android:text="Read More"
+            android:textColor="@color/red"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="onTechnologyClickTwo" />
+        
+        <!-- SECOND NEWS: END -->
+        
+    </RelativeLayout>
+    
+
+</ScrollView>

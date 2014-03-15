@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Start: General settings -->
+    <TextView
+        android:id="@+id/textView_general"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/general"
+        android:textColor="@color/grey"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/view_line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/textView_general"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="#383838"
+        android:paddingTop="20dp" />
+
+    <TextView
+        android:id="@+id/textView_screenOrientation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView_general"
+        android:layout_below="@id/view_line1"
+        android:layout_marginTop="7dp"
+        android:text="@string/screen_orientation"
+        android:textColor="@color/grey"
+        android:textSize="14sp" />
+    
+    <TextView
+        android:id="@+id/textView_screenOrientationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_general"
+        android:layout_below="@id/textView_screenOrientation"
+        android:layout_marginTop="7dp"
+        android:text="@string/screen_orientation_text"
+        android:textSize="14sp"
+        android:clickable="true"
+        android:onClick="onOrientationClicked" />
+	<!-- End: General settings -->
+	
+	<!-- Start: Update preferences settings -->
+
+    <TextView
+        android:id="@+id/textView_updatePreferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView_screenOrientationText"
+        android:layout_below="@id/textView_screenOrientationText"
+        android:text="@string/preferences"
+        android:textColor="@color/grey"
+        android:textSize="12sp"
+        android:layout_marginTop="12dp" />
+    
+    <View
+        android:id="@+id/view_line2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/textView_updatePreferences"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="#383838"
+        android:paddingTop="20dp" />
+    
+    <TextView
+        android:id="@+id/textView_newsUpdates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView_updatePreferences"
+        android:layout_below="@id/view_line2"
+        android:layout_marginTop="7dp"
+        android:text="@string/news_updates"
+        android:textColor="@color/grey"
+        android:textSize="14sp" />
+    
+    <TextView
+        android:id="@+id/textView_newsUpdatesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView_updatePreferences"
+        android:layout_below="@id/textView_newsUpdates"
+        android:layout_toLeftOf="@+id/checkBox_newsUpdates"
+        android:layout_marginTop="7dp"
+        android:text="@string/news_updates_text"
+        android:textSize="14sp" />
+    
+    <CheckBox
+        android:id="@+id/checkBox_newsUpdates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/view_line3"
+        android:layout_alignTop="@+id/textView_newsUpdatesText" />
+    
+    <View
+        android:id="@+id/view_line3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/textView_newsUpdatesText"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="#383838"
+        android:paddingTop="20dp" />
+    
+
+    <TextView
+        android:id="@+id/textView_updateFrequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView_newsUpdates"
+        android:layout_below="@id/view_line3"
+        android:layout_marginTop="7dp"
+        android:text="@string/update_frequency"
+        android:textColor="@color/grey"
+        android:textSize="14sp" />
+    
+    <TextView
+        android:id="@+id/textView_updateFrequencyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView_updateFrequency"
+        android:layout_below="@id/textView_updateFrequency"
+        android:layout_marginTop="7dp"
+        android:text="@string/update_frequency_text"
+        android:textSize="14sp"
+        android:clickable="true"
+        android:onClick="onFrequencyClicked" />
+    
+    <View
+        android:id="@+id/view_line4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/textView_updateFrequencyText"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="#383838"
+        android:paddingTop="20dp" />
+    
+    <TextView
+        android:id="@+id/textView_updateNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView_updateFrequency"
+        android:layout_below="@id/view_line4"
+        android:layout_marginTop="7dp"
+        android:text="@string/update_notifications"
+        android:textColor="@color/grey"
+        android:textSize="14sp" />
+    
+    <TextView
+        android:id="@+id/textView_updateNotificationsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView_updateNotifications"
+        android:layout_below="@id/textView_updateNotifications"
+        android:layout_toLeftOf="@+id/checkBox_notifications"
+        android:layout_marginTop="7dp"
+        android:text="@string/update_notifications_text"
+        android:textSize="14sp" />
+    
+    <CheckBox
+        android:id="@+id/checkBox_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/view_line5"
+        android:layout_alignTop="@id/textView_updateNotificationsText" />
+    
+    <View
+        android:id="@+id/view_line5"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/textView_updateNotificationsText"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="#383838"
+        android:paddingTop="20dp" />
+    
+    <TextView
+        android:id="@+id/textView_updateSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView_updateNotifications"
+        android:layout_below="@id/view_line5"
+        android:layout_marginTop="7dp"
+        android:text="@string/update_sound"
+        android:textColor="@color/grey"
+        android:textSize="14sp" />
+    
+    <TextView
+        android:id="@+id/textView_updateSoundText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView_updateSound"
+        android:layout_below="@id/textView_updateSound"
+        android:layout_toLeftOf="@+id/checkBox_sound"
+        android:layout_marginTop="7dp"
+        android:text="@string/update_sound_text"
+        android:textSize="14sp" />
+    
+    <CheckBox
+        android:id="@+id/checkBox_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/view_line6"
+        android:layout_alignTop="@id/textView_updateSoundText" />
+    
+    <View
+        android:id="@+id/view_line6"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/textView_updateSoundText"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="#383838"
+        android:paddingTop="20dp" />
+    
+    <!-- End: Update preferences settings -->
+	
+</RelativeLayout>

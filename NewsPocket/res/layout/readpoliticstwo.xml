@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/textView_latest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:text="POLITICS"
+            android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/textView_news"
+            android:layout_below="@id/textView_latest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+			android:text="Clinton compares Putin's Ukraine moves to Hitler and Nazi Germany"
+			android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/textView_updated"
+            android:layout_below="@id/textView_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+			android:text="Updated 8 minutes ago"
+			android:textColor="@color/updated"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+        
+        <ImageView
+            android:id="@+id/imageView_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/politics_2"
+            android:layout_below="@id/textView_updated" />
+        
+        <TextView
+            android:id="@+id/textView_imageDescription"
+            android:layout_below="@id/imageView_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="On Thursday, Clinton will deliver remarks at a closed event in Calgary."
+			android:textColor="@color/updated"
+            android:textSize="12sp" />
+        
+        <View
+	        android:id="@+id/view_line1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="1dp"
+	        android:layout_below="@id/textView_imageDescription"
+	        android:layout_marginTop="2dp"
+	        android:layout_marginLeft="3dp"
+	        android:layout_marginRight="3dp"
+	        android:background="@color/updated"
+	        android:paddingTop="20dp" />
+        
+        <TextView
+            android:id="@+id/textView_newsContentOne"
+            android:layout_below="@id/view_line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="Former Secretary of State Hillary Clinton reportedly said Tuesday that the moves Russian President Vladimir Putin has made in Ukraine are similar to those Adolf Hitler and the Nazis made in the 1930s. According to the Long Beach Press-Telegram, who had a reporter in the room for the closed Boys &amp; Girls Club of Long Beach fundraiser, Clinton said Putin's rush to protect anyone of Russian decent in Crimea is reminiscent of what Hitler did to protect Germans before World War II."
+			android:textColor="@color/summaryColor"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/textView_newsContentTwo"
+            android:layout_below="@id/textView_newsContentOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="Hitler justified his invasion of neighboring countries by saying they were efforts to protect ethnic Germans. Hitler annexed neighboring Austria and Czechoslovakia's Sudetenland in 1938, one year before invading Poland, which sparked the Second World War. The United States entered the war in December 1941, after Japan, Germany's ally, attacked U.S. naval forces in Pearl Harbor, Hawaii."
+			android:textColor="@color/summaryColor"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/textView_newsContentThree"
+            android:layout_below="@id/textView_newsContentTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="Tensions between Russia and Western powers, like the United States and European Union, have skyrocketed since Putin deployed troops to the Ukrainian peninsula of Crimea over the weekend. The deployments comes after the pro-Russian government in Ukraine was toppled by months-long demonstrations in the capital of Kiev."
+			android:textColor="@color/summaryColor"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/textView_newsContentFour"
+            android:layout_below="@id/textView_newsContentThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="The former first lady and former senator from New York State says she'll decide on a second White House bid by the end of the year. If Clinton does run, she would instantly become the front runner for the 2016 Democratic nomination, with poll after poll showing she is her party's top choice for the White House."
+			android:textColor="@color/summaryColor"
+            android:textSize="14sp" />
+        
+    </RelativeLayout>
+    
+
+</ScrollView>

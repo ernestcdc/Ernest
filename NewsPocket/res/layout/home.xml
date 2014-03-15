@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black" >
+    
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" >
+      
+    <LinearLayout 
+      android:id="@+id/first_row"
+      android:orientation="horizontal"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content" >
+
+      <LinearLayout
+    
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout 
+            android:id="@+id/firstRow_first_column"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+            <FrameLayout   
+    			android:layout_width="fill_parent"  
+    			android:layout_height="fill_parent" >
+		            <ImageView 
+		                android:id="@+id/imageView_latestNews"
+		                android:layout_width="wrap_content"
+		                android:layout_height="215sp"
+		                android:scaleType="fitXY"
+		                android:paddingLeft="2dp"
+		                android:paddingRight="1dp"
+		                android:src="@drawable/latest"
+		                android:clickable="true"
+		                android:onClick="onLatestClick" />
+		            
+		            <TextView  
+				        android:layout_width="fill_parent"  
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="5dp"  
+				        android:textColor="#fff"  
+				        android:textSize="15sp"  
+				        android:text="@string/latest" />
+		    </FrameLayout>
+            
+        </LinearLayout>
+    
+        <LinearLayout 
+            android:id="@+id/firstRow_second_column"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+            <FrameLayout  
+    			android:layout_width="fill_parent"  
+    			android:layout_height="fill_parent">
+		            <ImageView 
+		                android:id="@+id/imageView_weather"
+		                android:layout_width="wrap_content"
+		                android:layout_height="106.5dp"
+		                android:scaleType="fitXY"
+		                android:paddingLeft="1dp"
+		                android:paddingRight="2dp"
+		                android:src="@drawable/weather"
+		                android:clickable="true"
+		                android:onClick="onWeatherClick" />
+		            
+		            <TextView  
+				        android:layout_width="fill_parent"  
+				        android:layout_height="wrap_content"  
+				        android:layout_marginRight="5dp"
+				        android:text="@string/weather"  
+				        android:layout_gravity="bottom"  
+				        android:gravity="right"  
+				        android:textColor="#fff"  
+				        android:textSize="15sp" />
+		    </FrameLayout>
+            <FrameLayout   
+    			android:layout_width="fill_parent"  
+    			android:layout_height="fill_parent">
+		            <ImageView 
+		                android:id="@+id/imageView_currencies"
+		                android:layout_width="wrap_content"
+		                android:layout_height="106.5dp"
+		                android:scaleType="fitXY"
+		                android:paddingLeft="1dp"
+		                android:paddingRight="2dp"
+		                android:src="@drawable/business"
+		                android:layout_marginTop="2dp"
+		                android:clickable="true"
+		                android:onClick="onCurrencyClick"  />
+		            <TextView  
+				        android:layout_width="fill_parent"  
+				        android:layout_height="wrap_content"  
+				        android:layout_marginRight="5dp"
+				        android:text="@string/currencies"  
+				        android:layout_gravity="bottom"  
+				        android:gravity="right"  
+				        android:textColor="#fff"  
+				        android:textSize="15sp" />
+		    </FrameLayout>
+        </LinearLayout>
+    
+      </LinearLayout> 
+
+    </LinearLayout> <!-- 1st row -->
+  
+     <LinearLayout 
+         android:id="@+id/second_row"
+         android:orientation="horizontal"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_below="@id/first_row"
+         android:layout_marginTop="2dp" >
+      
+         <FrameLayout   
+    			android:layout_width="wrap_content"  
+    			android:layout_height="wrap_content"
+    			android:layout_weight="1">
+	         <ImageView 
+	                android:id="@+id/imageView_technology"
+	                android:layout_width="wrap_content"
+	                android:layout_height="135dp"
+	                android:scaleType="fitXY"
+	                android:paddingLeft="2dp"
+	                android:paddingRight="1dp"
+	                android:src="@drawable/technology"
+	                android:clickable="true"
+					android:onClick="onTechnologyClick" />
+	         <TextView  
+				        android:layout_width="fill_parent"  
+				        android:layout_height="wrap_content"  
+				        android:layout_marginRight="5dp"
+				        android:text="@string/technology"  
+				        android:layout_gravity="bottom"  
+				        android:gravity="right"  
+				        android:textColor="#fff"  
+				        android:textSize="15sp" />
+	    </FrameLayout>
+       	<FrameLayout   
+    			android:layout_width="wrap_content"  
+    			android:layout_height="wrap_content"
+    			android:layout_weight="1">   
+	         <ImageView 
+	                android:id="@+id/imageView_politics"
+	                android:layout_width="wrap_content"
+	                android:layout_height="135dp"
+	                android:scaleType="fitXY"
+	                android:paddingLeft="1dp"
+	                android:paddingRight="2dp"
+	                android:src="@drawable/politics"
+	                android:clickable="true"
+	                android:onClick="onPoliticsClick" />
+	         <TextView  
+				        android:layout_width="fill_parent"  
+				        android:layout_height="wrap_content"  
+				        android:layout_marginLeft="5dp"
+				        android:text="@string/politics"  
+				        android:layout_gravity="bottom"  
+				        android:gravity="left"  
+				        android:textColor="#fff"  
+				        android:textSize="15sp" />
+         </FrameLayout>
+     </LinearLayout>
+     
+     <LinearLayout 
+         android:id="@+id/third_row"
+         android:orientation="vertical"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_below="@id/second_row"
+         android:layout_marginTop="2dp" >
+         <FrameLayout 
+             android:layout_width="match_parent"
+             android:layout_height="0dip"
+             android:layout_weight="1">
+
+	         <ImageView
+	             android:id="@+id/imageView_science"
+	             android:layout_width="wrap_content"
+	             android:layout_height="115dp"
+	             android:paddingLeft="2dp"
+	             android:paddingRight="2dp"
+	             android:scaleType="fitXY"
+	             android:src="@drawable/science"
+	             android:clickable="true"
+	             android:onClick="onScienceClick" />
+	         <LinearLayout
+	             android:orientation="vertical"
+	             android:layout_gravity="center_vertical"
+         		 android:layout_height="wrap_content"
+         		 android:layout_width="wrap_content">
+			<TextView  
+			    		android:id="@+id/textView_top"
+				        android:layout_width="fill_parent"  
+				        android:layout_height="wrap_content"  
+				        android:layout_marginLeft="5dp"
+				        android:text="@string/science"  
+				        android:layout_gravity="center"  
+				        android:gravity="left"  
+				        android:textColor="#fff"  
+				        android:textSize="15sp" />
+			<TextView  
+			    		android:id="@+id/textView_mid"
+				        android:layout_width="fill_parent"  
+				        android:layout_height="wrap_content"  
+				        android:layout_marginLeft="5dp"
+				        android:text="@string/and"
+				        android:layout_gravity="center"  
+				        android:gravity="left"  
+				        android:textColor="#fff"  
+				        android:textSize="15sp" />
+
+			<TextView
+			    android:id="@+id/textView_bottom"
+			    android:layout_width="114dp"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"
+			    android:layout_marginLeft="5dp"
+			    android:gravity="left"
+			    android:text="@string/environment"
+			    android:textColor="#fff"
+			    android:textSize="15sp" />
+
+			</LinearLayout>
+	     </FrameLayout>
+     </LinearLayout>
+      
+  </RelativeLayout>
+  
+</ScrollView>

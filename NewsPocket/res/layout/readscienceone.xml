@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/textView_latest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:text="SCIENCE"
+            android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/textView_news"
+            android:layout_below="@id/textView_latest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+			android:text="Superfast laser pulses could pave way for beam weapons"
+			android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/textView_updated"
+            android:layout_below="@id/textView_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+			android:text="Updated 21 minutes ago"
+			android:textColor="@color/updated"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+        
+        <ImageView
+            android:id="@+id/imageView_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_updated"
+            android:layout_alignRight="@+id/textView_imageDescription"
+            android:layout_below="@id/textView_updated"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/science_1" />
+        
+        <TextView
+            android:id="@+id/textView_imageDescription"
+            android:layout_below="@id/imageView_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="The U.S. Navy is reportedly deploying a laser weapon system on one of its ships. New work on carving out air-based conduits for high-energy laser beams could improve this technology."
+			android:textColor="@color/updated"
+            android:textSize="12sp" />
+        
+        <View
+	        android:id="@+id/view_line1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="1dp"
+	        android:layout_below="@id/textView_imageDescription"
+	        android:layout_marginTop="2dp"
+	        android:layout_marginLeft="3dp"
+	        android:layout_marginRight="3dp"
+	        android:background="@color/updated"
+	        android:paddingTop="20dp" />
+        
+        <TextView
+            android:id="@+id/textView_newsContentOne"
+            android:layout_below="@id/view_line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="Laser pulses lasting tiny fractions of a second have created superhighways in the air that are potentially capable of transporting megawatts of laser power. The advance should help scientists detect pollution in the atmosphere. It could also enable more exotic applications such as redirecting lightning and building practical laser weapons."
+			android:textColor="@color/summaryColor"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/textView_newsContentTwo"
+            android:layout_below="@id/textView_newsContentOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="Lost in the hype surrounding President Reagan’s Strategic Defense Initiative and other laser-based weapon systems was the fact that it’s difficult to deliver large amounts of energy through the atmosphere via laser. Air absorbs laser energy, heats up and expands. That low-density air acts like a defocusing lens, causing the beam to spread apart and weaken."
+			android:textColor="@color/summaryColor"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/textView_newsContentThree"
+            android:layout_below="@id/textView_newsContentTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="To traverse meters or kilometers through the atmosphere intact, laser beams have to be released in short, intense pulses. But at about 50 quadrillionths of a second in duration, such pulses can’t deliver enough sustained energy to remotely power an aircraft or burn a hole through an incoming intercontinental ballistic missile."
+			android:textColor="@color/summaryColor"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/textView_newsContentFour"
+            android:layout_below="@id/textView_newsContentThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="Then there’s the possibility of death rays – or directed-energy weapons, the more formal term for lasers designed to burn or destroy a target. Milchberg isn’t shy about saying the new study brings such technology closer to reality; Gaeta agrees. And while the Cold War is over, interest in laser weapons is going strong: The U.S. Navy reportedly will deploy a drone-killing laser weapon system on one of its ships."
+			android:textColor="@color/summaryColor"
+            android:textSize="14sp" />
+        
+    </RelativeLayout>
+    
+
+</ScrollView>

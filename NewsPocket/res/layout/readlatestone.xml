@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/textView_latest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:text="LATEST"
+            android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/textView_news"
+            android:layout_below="@id/textView_latest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+			android:text="South Sudan clashes 'kill 400-500'"
+			android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/textView_updated"
+            android:layout_below="@id/textView_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+			android:text="Updated 48 minutes ago"
+			android:textColor="@color/updated"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+        
+        <ImageView
+            android:id="@+id/imageView_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/south_sudan"
+            android:layout_below="@id/textView_updated" />
+        
+        <TextView
+            android:id="@+id/textView_imageDescription"
+            android:layout_below="@id/imageView_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="Civilians have been pouring into the UN compound in Juba to seek shelter."
+			android:textColor="@color/updated"
+            android:textSize="12sp" />
+        
+        <View
+	        android:id="@+id/view_line1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="1dp"
+	        android:layout_below="@id/textView_imageDescription"
+	        android:layout_marginTop="2dp"
+	        android:layout_marginLeft="3dp"
+	        android:layout_marginRight="3dp"
+	        android:background="@color/updated"
+	        android:paddingTop="20dp" />
+        
+        <TextView
+            android:id="@+id/textView_newsContentOne"
+            android:layout_below="@id/view_line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="Juba — A UN official said Tuesday between 400-500 people are believed to have been killed in South Sudan, where two days of fighting between rival troops has sent thousands of terrified civilians fleeing an alleged coup bid."
+			android:textColor="@color/summaryColor"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/textView_newsContentTwo"
+            android:layout_below="@id/textView_newsContentOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="The United States ordered non-essential embassy staff out of the country as fierce battles raged in the capital Juba, setting off alarm bells over ethnic violence in the world's youngest nation."
+			android:textColor="@color/summaryColor"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/textView_newsContentThree"
+            android:layout_below="@id/textView_newsContentTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="As sporadic clashes broke out in parts of the city, terrified residents hunkered down at home, too afraid to move. Others used any lull in fighting to flee to safer areas, an AFP reporter said."
+			android:textColor="@color/summaryColor"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/textView_newsContentFour"
+            android:layout_below="@id/textView_newsContentThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="&quot;We are afraid of going outside,&quot; said Juba resident Jane Kiden. &quot;We had wanted to go out and buy food from the market, but how can you go with the shooting? I am staying at home with my.\&quot;"
+			android:textColor="@color/summaryColor"
+            android:textSize="14sp" />
+        
+    </RelativeLayout>
+    
+
+</ScrollView>

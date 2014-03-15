@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_latestOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:text="POLITICS"
+            android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_newsOne"
+            android:layout_below="@id/textView_latestOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+			android:text="Ukraine crisis: Western leaders pile pressure on Russia"
+			android:textColor="@color/grey"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView_newsOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/politics_1"
+            android:layout_below="@id/textView_newsOne" />
+        
+        <TextView
+            android:id="@+id/textView_summaryOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="Western powers increased pressure on Russia on Wednesday to talk to the new government in Kiev in a bid to ease tensions over Russia's military intervention in Ukraine's Crimea region."
+			android:layout_below="@id/imageView_newsOne"
+			android:textColor="@color/summaryColor"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textView_readMoreOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView_summaryOne"
+            android:layout_alignRight="@+id/textView_summaryOne"
+            android:text="Read More"
+            android:textColor="@color/red"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="onPoliticsClickOne" />
+        
+        <!-- SECOND NEWS: START -->
+        
+        <TextView
+            android:id="@+id/textView_newsTwo"
+            android:layout_below="@id/textView_readMoreOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="7dp"
+			android:text="Clinton compares Putin's Ukraine moves to Hitler and Nazi Germany"
+			android:textColor="@color/grey"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView_newsTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/politics_2"
+            android:layout_below="@id/textView_newsTwo" />
+        
+        <TextView
+            android:id="@+id/textView_summaryTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="Former Secretary of State Hillary Clinton reportedly said Tuesday that the moves Russian President Vladimir Putin has made in Ukraine are similar to those Adolf Hitler."
+			android:layout_below="@id/imageView_newsTwo"
+			android:textColor="@color/summaryColor"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textView_readMoreTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView_summaryTwo"
+            android:layout_alignRight="@+id/textView_summaryTwo"
+            android:text="Read More"
+            android:textColor="@color/red"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="onPoliticsClickTwo" />
+        
+        <!-- SECOND NEWS: END -->
+        
+    </RelativeLayout>
+    
+
+</ScrollView>

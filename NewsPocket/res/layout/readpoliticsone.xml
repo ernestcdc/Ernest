@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/textView_latest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:text="POLITICS"
+            android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/textView_news"
+            android:layout_below="@id/textView_latest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+			android:text="Ukraine crisis: Western leaders pile pressure on Russia"
+			android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/textView_updated"
+            android:layout_below="@id/textView_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+			android:text="Updated 16 minutes ago"
+			android:textColor="@color/updated"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+        
+        <ImageView
+            android:id="@+id/imageView_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/politics_1"
+            android:layout_below="@id/textView_updated" />
+        
+        <TextView
+            android:id="@+id/textView_imageDescription"
+            android:layout_below="@id/imageView_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="Ukrainian recruits line up to receive military instructions in Kiev's Independence Square on Tuesday, March 4."
+			android:textColor="@color/updated"
+            android:textSize="12sp" />
+        
+        <View
+	        android:id="@+id/view_line1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="1dp"
+	        android:layout_below="@id/textView_imageDescription"
+	        android:layout_marginTop="2dp"
+	        android:layout_marginLeft="3dp"
+	        android:layout_marginRight="3dp"
+	        android:background="@color/updated"
+	        android:paddingTop="20dp" />
+        
+        <TextView
+            android:id="@+id/textView_newsContentOne"
+            android:layout_below="@id/view_line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="Western powers increased pressure on Russia on Wednesday to talk to the new government in Kiev in a bid to ease tensions over Russia's military intervention in Ukraine's Crimea region. Russia has been warned that possible sanctions will be on the agenda when European Union leaders meet Thursday in Brussels, Belgium, if no progress is made in ending the high-stakes showdown."
+			android:textColor="@color/summaryColor"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/textView_newsContentTwo"
+            android:layout_below="@id/textView_newsContentOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="But such measures may not only hurt Russia. In a tit-for-tat move, Russian lawmakers are drafting a law that would allow Russia to confiscate assets belonging to U.S. and European companies if sanctions are slapped on Moscow, Russian state media reported. The diplomatic maneuvers come as world leaders meet in Paris for talks that were intended to focus on Lebanon. Instead, Ukraine will likely dominate the agenda."
+			android:textColor="@color/summaryColor"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/textView_newsContentThree"
+            android:layout_below="@id/textView_newsContentTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="Russian forces remain in effective control of Crimea, a Black Sea peninsula where Russia has a large naval base, in a tense standoff with Ukrainian forces loyal to the new interim government in Kiev. U.S. Secretary of State John Kerry and his Russian counterpart, Sergey Lavrov, are due to meet in Paris. But UK Foreign Secretary William Hague said what happens at the EU meeting on sanctions &quot;will be partly determined by Russia's willingness to sit down with Ukraine.&quot;"
+			android:textColor="@color/summaryColor"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/textView_newsContentFour"
+            android:layout_below="@id/textView_newsContentThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+			android:text="If no progress can be made on de-escalating the situation, then there will be &quot;costs and  consequences,&quot; Hague said. &quot;It will be a test this afternoon of whether Russia is prepared to sit down with Ukraine. And we will strongly recommend that they do so.&quot;"
+			android:textColor="@color/summaryColor"
+            android:textSize="14sp" />
+        
+    </RelativeLayout>
+    
+
+</ScrollView>
